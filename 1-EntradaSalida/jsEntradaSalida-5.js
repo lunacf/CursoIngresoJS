@@ -9,3 +9,9 @@ function mostrar()
     alert(nombre + edad);
 }
 
+/*  
+   var nombre;
+   var edad;
+   var mensaje;
+   nombre = document.getElementByiD("elNombre").value;
+   edad = document.getElementByID

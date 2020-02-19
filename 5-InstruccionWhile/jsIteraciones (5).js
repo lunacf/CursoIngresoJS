@@ -1,12 +1,11 @@
 function mostrar() {
 
-    var sexo = prompt("ingrese f ó m .");
-    while (sexo != "f" || sexo == "m") {
-        sexo = alert("Usted es masculino");
-        document.getElementById('Sexo').value = sexo;
-    }
-    alert("Usted es femenino");
+    var sexo;
+    do {
+        //Estas lineas se ejecutaran solo una vez
+        sexo = prompt("Ingrese f ó m");
+        sexo.toLocaleLowerCase();
+    } while (!(sexo == "f" || sexo == "m")); //Evalua la condición
 
-    document.getElementById('Sexo').value = sexo;
 
-}//FIN DE LA FUNCIÓN
+} document.getElementById("Sexo").value = sexo;//FIN DE LA FUNCIÓN
